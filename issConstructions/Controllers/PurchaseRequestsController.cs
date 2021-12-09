@@ -123,7 +123,7 @@ namespace issConstructions.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,RequestID,RequestDate,CategoryId,SupplierId,SupplierAddressId,ProjectId,SiteId,SiteAddressId,mobileno,sno,productId,Description,Rate,Quality,Tax,TotalAmount,RequestBy,Remarks,isDeleted,CreatedDate,UpdateBy,UpdatedDate")] PurchaseRequest purchaseRequest)
+        public ActionResult Edit([Bind(Include = "ID,RequestID,RequestDate,CategoryId,SupplierId,SupplierAddressId,ProjectId,SiteId,SiteAddressId,mobileno,sno,productId,Description,Rate,Quality,Tax,TaxAmount, NetAmount, TotalAmount,RequestBy,Remarks,isDeleted,CreatedDate,UpdateBy,UpdatedDate")] PurchaseRequest purchaseRequest)
         {
             if (ModelState.IsValid)
             {
