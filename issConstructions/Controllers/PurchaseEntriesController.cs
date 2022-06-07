@@ -13,6 +13,7 @@ using issDomain.Models;
 namespace issConstructions.Controllers
 {
    // [CustomAuthorize(Roles = "Admin,Manager")]
+
     public class PurchaseEntriesController : Controller
     {
         private issDB db = new issDB();
